@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Landsmen</title>
+    <link rel='stylesheet' type='text/css' href='land-test.css'
+</head>
+<body>
+    <h1 id='warning' style="display: none">Що кликнА, като ти се казА да не кликаш, ве!</h1>
+
+    <button id='forbidden-button' onclick="action()">Don't click on this button, please!</button>
+    <script>
+        function action() {
+
+            document.getElementById('forbidden-button').style.display="none"
+            document.getElementById('warning').style.display="block"
+            document.createElement('button').textContent('hui')
+        }
+    </script>
+
+</body>
+</html>
